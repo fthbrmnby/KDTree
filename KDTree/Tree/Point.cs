@@ -10,13 +10,7 @@ namespace KDTree.Tree
     public int NumDimensions => AxisValues.Count();
     public double this[int index]
     {
-      get
-      {
-        if (index > NumDimensions || index < 0)
-          throw new IndexOutOfRangeException();
-
-        return AxisValues[index];
-      }
+      get { return AxisValues[index]; }
     }
 
     public Point(int k)
